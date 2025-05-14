@@ -12,6 +12,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
+      - name: "Install dependencies"
+        run: npm ci
       - name: "lint code"
         run: npm lint
   
@@ -24,6 +26,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
+      - name: "Install dependencies"
+        run: npm ci
       - name: "test code"
         run: npm test
     
@@ -36,5 +40,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
+      - name: "Install dependencies"
+        run: npm ci
       - name: "deploy code"
-        run: echo "deploying code...""
+        run: echo "deploying code..."
