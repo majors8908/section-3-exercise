@@ -9,7 +9,7 @@ jobs:
       - name: get code
         uses: actions/checkout@v3
       - name: Install NodeJS
-        uses: actions/setip-node@v3
+        uses: actions/setup-node@v3
         with:
           node-version: 18
       - name: lint code
@@ -21,7 +21,7 @@ jobs:
       - name: get code
         uses: actions/checkout@v3
       - name: Install NodeJS
-        uses: actions/setip-node@v3
+        uses: actions/setup-node@v3
         with:
           node-version: 18
       - name: lint code
@@ -33,7 +33,7 @@ jobs:
       - name: get code
         uses: actions/checkout@v3
       - name: Install NodeJS
-        uses: actions/setip-node@v3
+        uses: actions/setup-node@v3
         with:
           node-version: 18
       - name: lint code
