@@ -12,7 +12,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
-      - name: lint code
+      - name: "lint code"
         run: npm lint
   
   test:
@@ -24,7 +24,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
-      - name: lint code
+      - name: "test code"
         run: npm test
     
   deploy:
@@ -36,5 +36,5 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
-      - name: lint code
+      - name: "deploy code"
         run: echo "deploying code...""
